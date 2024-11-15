@@ -1,0 +1,141 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    width : 100%;
+    height: 100%;
+}
+.page1 {
+    width : 100%;
+    height : 100%;
+    background-image: url("italian-food-with-ingredients_1220-4850.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "bebas";
+    display: flex;
+    overflow: hidden;
+}
+.page1 .left , .page1 .right  {
+    width : 20%;
+    height : 100%;
+    /* background-color: #302e2f;  */
+    text-align: center;  
+    padding : 2vw 0;
+}
+.page1 .left img , .page1 .right img{
+    width : 14vw;
+    height : 14vw;
+    border : 6px solid white;
+    transition: 0.25s linear;
+}
+.page1 .left img:hover{
+    transform : rotate(20deg);
+    scale :1.2;
+}
+.page1 .left img:first-child{
+   rotate: 10deg;
+}
+.page1 .left img:nth-child(2){
+   rotate: -10deg;
+}
+.page1 .left img:last-child{
+   rotate: 15deg;
+}
+.page1 .middle {
+    width : 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.page1 .middle h4 {
+    font-size : 3vw;
+    /* padding-top: 10vw; */
+    color : rgb(213, 15, 15);
+    line-height: 10vw;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+.page1 .middle h1{
+    font-size : 10vw;
+    color : white;
+  font-family: "Italianno", cursive;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  line-height: 6vw;
+  letter-spacing: 10px;
+}
+
+.page1 .middle  .festival{
+   color : rgb(250, 128, 148);
+   color : red;
+}
+
+.page1 .middle p{
+    font-family: "Italianno", cursive;
+    color : white;
+    font-size: 2vw;
+    padding : 1vw 6vw;
+    color :rgb(233, 174, 184)
+}
+.page1 .middle h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    letter-spacing: 3px;
+    padding-top : 1vh;
+}
+.page1 .middle .add {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    padding : 1vh 0;
+}
+.page1 .right {
+   display : flex;
+   align-items: end; 
+}
+.page1 .right img {
+  border : none;
+}
+
+@media (max-width : 600px){
+    .page1 {
+      
+       flex-direction: column-reverse;
+    }
+    .page1 .middle{
+        width : 100%;
+        height : 60%
+    }
+    .page1 .middle h1 {
+        font-size: 17vw;
+        line-height: 10vw;
+    }
+    .page1 .middle p{
+        font-size: 5vw;
+    }
+    .page1 .middle h4{
+        color : rgb(210, 223, 24);
+    }
+    .page1 .left{
+        width : 100%;
+        height : 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .page1 .left img{
+         height : 20vw;
+         width : 20vw;
+    }
+    .page1 .right {
+        height : 43%;
+    }
+}
+
